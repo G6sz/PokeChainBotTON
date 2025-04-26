@@ -54,7 +54,7 @@ class Program
                 InlineKeyboardButton.WithUrl("Play on TON", "https://ton.org/")
             );
 
-            await botClient.SendMessage(
+            await botClient.SendTextMessageAsync(
                 chatId: message.Chat.Id,
                 text: "Welcome to PokeChainBot! Click the button below to play.",
                 replyMarkup: keyboard,
@@ -69,7 +69,7 @@ class Program
                 InlineKeyboardButton.WithUrl("Conectar carteira TON", connectUrl)
             );
 
-            await botClient.SendMessage(
+            await botClient.SendTextMessageAsync(
                 chatId: message.Chat.Id,
                 text: "Connect your wallet to play.",
                 replyMarkup: keyboard,
