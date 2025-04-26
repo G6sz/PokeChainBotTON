@@ -63,10 +63,10 @@ class Program
         }
         else if (messageText == "/connect"){
 
-            var connectUrl = "https://app.tonkeeper.com/ton-connect?manifestUrl=https://g6sz.github.io/PokeChainBotTON/tonconnect-manifest.json";"
+            var connectUrl = "https://app.tonkeeper.com/ton-connect?manifestUrl=https://g6sz.github.io/PokeChainBotTON/tonconnect-manifest.json";
 
             var keyboard = new InlineKeyboardMarkup(
-                InlineKeyboardButton.WithUrl("Connect Wallet", connectUrl)
+                InlineKeyboardButton.WithUrl("Conectar carteira TON", connectUrl)
             );
 
             await botClient.SendMessage(
