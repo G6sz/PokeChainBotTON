@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PokeChainBot - TonConnect</title>
+    </head>
+    <body>
+        <h1>Wellcome to PokeChainBot!</h1>
+        <p>This is the manifest of TonConnect for the bot of Telegram.</p>
+        <h1>Connect Wallet</h1>
+        <div id="ton-connect-button"></div>
+
+        <script src="./tonconnect-ui.min.js"></script>
+        <script>
+            const tonConnectUI = new TonConnectUI({
+                manifestUrl: "https://g6sz.github.io/PokeChainBot/tonconnect-manifest.json",
+                buttonRootId: "ton-connect-button",
+            })
+        </script>
+    </body>
+</html>
