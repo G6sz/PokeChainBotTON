@@ -69,7 +69,7 @@ class Program
                 InlineKeyboardButton.WithUrl("Connect Wallet", connectUrl)
             );
 
-            await botClient.SendTextMessageAsync(
+            await botClient.SendMessage(
                 chatId: message.Chat.Id,
                 text: "Connect your wallet to play.",
                 replyMarkup: keyboard,
