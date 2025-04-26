@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["dotnet-sdk_8_0, "dotnet-runtime_8_0"]
+nixPkgs = ["dotnet-sdk_8"]
 
 [phases.build]
 cmds = ["dotnet publish BotTelegram.csproj -c Release -o /app/publish"]
