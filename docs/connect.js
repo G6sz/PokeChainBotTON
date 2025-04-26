@@ -1,5 +1,5 @@
 const tonConnectUI = new TonConnectUI({
-    manifestUrl: "https://g6sz.github.io/PokeChainBot/tonconnect-manifest.json",
+    manifestUrl: "https://g6sz.github.io/PokeChainBotTON/tonconnect-manifest.json",
     buttonRootId: "ton-connect-button"
 });
 
