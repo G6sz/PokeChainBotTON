@@ -61,6 +61,21 @@ class Program
                 cancellationToken: cancellationToken
             );
         }
+        else if (messageText == "/connect"){
+
+            var connectUrl = "https://app.tonkeeper.com/ton-connect?manifestUrl=https://g6sz.github.io/PokeChainBotTON/tonconnect-manifest.json";"
+
+            var keyboard = new InlineKeyboardMarkup(
+                InlineKeyboardButton.WithUrl("Connect Wallet", connectUrl)
+            );
+
+            await botClient.SendTextMessageAsync(
+                chatId: message.Chat.Id,
+                text: "Connect your wallet to play.",
+                replyMarkup: keyboard,
+                cancellationToken: cancellationToken
+            );
+        }
     }
 
     static Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
